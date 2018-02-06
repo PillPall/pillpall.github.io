@@ -7,7 +7,8 @@ categories: Other
 
 My useful SSH/SCP commands to work with a Jumphost, but never want to touch it.
 
-####Open a Shell on the remot host
+### Open a Shell on the remot host
+
 To connect a Unix machine which is only accessible via a jumphost directlty, you need to store your public key in the `~/.ssh/authorized_key` file on the jumphost.  Afterwards you can access the remote host using following commands:
 
 {% highlight Bash %}
@@ -20,12 +21,11 @@ To connect a Unix machine which is only accessible via a jumphost directlty, you
 [zadmin@ip-10-0-0-1 ~]$ 
 {% endhighlight %}
 
-###Port Forwarding
+### Port Forwarding
 To access a Port on the remote Host we can use the buildin feature of TCPForwarding in OpenSSH. This allows us for example to open a HTTP website on our localhost which runs on the remote server.
 
 At first we need to enable TCPForwarding in the Daemon configurationfile of SSH `sshd_config`, per default TCPForwarding is enabled at least since OpenSSH Version 7.6p1. 
 
-* Open Port 80 
 {% highlight Bash %}
 # example command
 /bin/bash># ssh -L LOCAL_PORT:WEBSERVER:REMOTE_PORT -J jumpuser@JUMPHOST remoteuser@REMOTEHOST
@@ -48,7 +48,7 @@ channel 3: open failed: connect failed: Connection refused
 {% endhighlight %}
 Check if the service is really running on the remote host or if the port is listening `netstat -tlnp`.
 
-###Filetransfer with Jumphost
+### Filetransfer with Jumphost
 We can use `scp` to transfer files/ directories to our remotehost via the jumphost, similar to the first example to access the remotehost directly.
 
 {% highlight bash %}
