@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python statements/Conditions"
+title:  "Python statements/conditions"
 date:   2018-02-10 01:00:00 +1000
 categories: python
 ---
