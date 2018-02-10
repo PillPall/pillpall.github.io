@@ -2,7 +2,7 @@
 layout: post
 title:  "Managing ssh connection with an jumphost in between"
 date:   2018-02-06 12:00:00 +1000
-categories: Other
+categories: Linux
 ---
 
 My useful SSH/SCP commands to work with a Jumphost, but never want to touch it.
@@ -10,27 +10,28 @@ My useful SSH/SCP commands to work with a Jumphost, but never want to touch it.
 ### Open a Shell on the remot host
 
 To connect a Unix machine which is only accessible via a jumphost directlty, you need to store your public key in the `~/.ssh/authorized_key` file on the jumphost.  Afterwards you can access the remote host using following commands:
+<!--excerpts-->
 
 {% highlight Bash %}
 # example command
 /bin/bash># ssh -J jumpuser@JUMPHOST remoteuser@REMOTEHOST
 
-# Command to connect directly to Host 10.0.0.1 which 
+# Command to connect directly to Host 10.0.0.1 which
 # is only accessible via Jumphost 93.184.216.34
 /bin/bash># ssh -J cadmin@93.184.216.34 zadmin@10.0.0.1
-[zadmin@ip-10-0-0-1 ~]$ 
+[zadmin@ip-10-0-0-1 ~]$
 {% endhighlight %}
 
 ### Port Forwarding
 To access a Port on the remote Host we can use the buildin feature of TCPForwarding in OpenSSH. This allows us for example to open a HTTP website on our localhost which runs on the remote server.
 
-At first we need to enable TCPForwarding in the Daemon configurationfile of SSH `sshd_config`, per default TCPForwarding is enabled at least since OpenSSH Version 7.6p1. 
+At first we need to enable TCPForwarding in the Daemon configurationfile of SSH `sshd_config`, per default TCPForwarding is enabled at least since OpenSSH Version 7.6p1.
 
 {% highlight Bash %}
 # example command
 /bin/bash># ssh -L LOCAL_PORT:WEBSERVER:REMOTE_PORT -J jumpuser@JUMPHOST remoteuser@REMOTEHOST
 
-# Command to connect directly to Host 10.0.0.1 and 
+# Command to connect directly to Host 10.0.0.1 and
 # open port 80 on localhost and connect it to port 80
 # on the remote HOst
 /bin/bash># ssh -L 80:10.0.0.1:80 -J cadmin@93.184.216.34 zadmin@10.0.0.1
