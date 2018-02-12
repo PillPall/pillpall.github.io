@@ -151,7 +151,7 @@ mode = module.params.get("mode")
   elif mode == 'upload':
       result = upload(s3_connection, module)
   else:
-      module.fail_json(msg='Error: unsupported state. Supported states are download and upload')
+      module.fail_json(msg='Error: unsupported mode. Supported modes are download and upload')
 {% endhighlight %}
 
 We save the parameter `mode` and check if we want to download or upload something otherwise we print an error with an unsupported mode. Now we start with the method definition download()
