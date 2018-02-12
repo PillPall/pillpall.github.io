@@ -204,7 +204,7 @@ def upload(s3_connection, module):
 The uploading follows exact the same syntax like the download. More information can be taken from the boto3 Doc[(Link)](http://boto3.readthedocs.io/en/latest/reference/services/s3.html#S3.Object.upload_file)
 
 ### Let me out !
-After describing our modules we need to add the exit procedure in order to get our Ansible module running and actually to exit properly. Therefore we add at the end of our main method following piece of code
+After describing our methods we need to add the exit procedure in order to get our Ansible module running and actually to exit properly. Therefore we add at the end of our main method following piece of code
 {% highlight python linenos %}
   module.exit_json(**result)
 {% endhighlight %}
