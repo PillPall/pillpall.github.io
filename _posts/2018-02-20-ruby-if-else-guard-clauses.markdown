@@ -189,4 +189,4 @@ true
 false
 {% endhighlight %}
 
-As you can see, you can massively reduce your code.
+As you can see, you can massively reduce your code.[(Source Code)](https://github.com/PillPall/examples/blob/master/ruby_rubocop/test.rb)
