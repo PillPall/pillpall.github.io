@@ -10,8 +10,9 @@ Short description of how to get a password e.g. Wifi Password in MacOSx.
 1. Open Spotlight Search by clicking on the magnifier at the bottom right of the taskbar or by using the keyboard combination `Command + space`
 
 2. Search for Keychain Access and open it
-![Search Keychain]({{ "/assets/posts/macos_keychain/1_search_key_chain.png" | absolute_url }})
+
 <!--excerpts-->
+![Search Keychain]({{ "/assets/posts/macos_keychain/1_search_key_chain.png" | absolute_url }})
 
 3. Type the name of the Wifi you want to know the password from
 ![Search wifi]({{ "/assets/posts/macos_keychain/2_search_wifi_network.png" | absolute_url }})
