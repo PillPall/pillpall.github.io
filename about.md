@@ -6,9 +6,9 @@ permalink: /about/
 
 Hello and welcome!
 
-Thanks for visiting me :-)
+Thanks for visiting this blog :-)
 
-Big thanks to the Jekyll project on GitHub to make blogging so easy and to GitHub for the possibility of hosting this Blog as a repo.
+Big thanks to the Jekyll project on GitHub for making a blog so easy to use and to GitHub for the possibility of hosting this Blog as a repo.
 [jekyll organization][jekyll-organization] /
 [GitHub][GitHub] /
 [Bloggy McBlogBloch Repo][BlogRepo]
