@@ -33,7 +33,7 @@ Following Ansible modules are at the moment available:
 | spotify_update_playlists       | Add or remove songs from a playlist        | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_update_playlists.md)|
 | spotify_artists_top_tracks     | Get the top tracks of an artist            |[Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_artists_top_tracks.md)|
 | spotify_related_artists        | Get related artists                        | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_related_artists.md)|
-
+| spotify_track_data        | Get Audio features or analyse tracks                        | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_track_data.md)|
 ## Step 1 - Prerequisites
 
 - **Download or clone the github project**
