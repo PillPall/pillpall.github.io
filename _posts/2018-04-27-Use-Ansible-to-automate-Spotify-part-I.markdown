@@ -26,14 +26,15 @@ Following Ansible modules are at the moment available:
 | ------------------------------ | ------------------------------------------ | ------------- |
 | spotify_auth                   | Module for the authentication process      |[Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_auth.md)|
 | spotify_auth_create_user_token | Module for the user authentication process |[Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_auth_create_user_token.md)|
+| spotify_album     | Get information about one or multiple albums. |[Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_album.md)|
+| spotify_artists_top_tracks     | Get the top tracks of an artist            |[Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_artists_top_tracks.md)|
 | spotify_player                 | Spotify Player to play a song and more.    |[Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_player.md)|
+| spotify_related_artists        | Get related artists                        | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_related_artists.md)|
 | spotify_search                 | Search in Spotify                          | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_search.md)|
+| spotify_track_data     | Get Audio features from a track or analyse tracks  | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_artists_top_tracks.md)|
 | spotify_user_info              | Get user information                       | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_user_info.md)|
 | spotify_user_playlists         | Search and create a user playlist          | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_user_playlists.md)|
 | spotify_update_playlists       | Add or remove songs from a playlist        | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_update_playlists.md)|
-| spotify_artists_top_tracks     | Get the top tracks of an artist            |[Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_artists_top_tracks.md)|
-| spotify_related_artists        | Get related artists                        | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_related_artists.md)|
-| spotify_track_data     | Get Audio features from a track or analyse tracks  | [Link](https://github.com/PillPall/ansible-spotify-client/blob/master/docs/Ansible_modules/spotify_artists_top_tracks.md)|
 
 ## Step 1 - Prerequisites
 
