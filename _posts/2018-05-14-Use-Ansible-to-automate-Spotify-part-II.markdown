@@ -136,7 +136,7 @@ Task 4: Get top tracks for all related artists found
 
 Task 5: Create a new user playlist with the name *Ansible created Playlist*
 
-Task 6: Add all album tracks to the new playlist
+Task 6: Add all top tracks to the new playlist
 
 ![Create album playlist](https://i.imgur.com/AneW3GK.gif)
 
