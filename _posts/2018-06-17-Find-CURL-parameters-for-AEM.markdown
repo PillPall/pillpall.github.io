@@ -17,7 +17,7 @@ To find out what we need to create a Truststore in AEM via cURL we need to do th
 * Under **Account settings** click on **Create TrustStore**
 
 Now you will see in the Network tool a **POST** call/method:
-![Search Keychain]({{ "/assets/posts/aem_cURL/1_network_console.png" | absolute_url }})
+![Network Console]({{ "/assets/posts/aem_cURL/1_network_console.png" | absolute_url }})
 
 When you click on it you will see the **request url** and the **request method**. Which gives us the following cURL command so far:
 
@@ -26,7 +26,7 @@ curl -u 'admin:admin' -X POST http://localhost:4502/libs/granite/security/post/t
 ```
 
 To know which options we need to add to our cURL command we need to click on **Edit and Resend**. In the **request body** we will see all options we need to add to our cURL command.
-![Search Keychain]({{ "/assets/posts/aem_cURL/2_new_request.png" | absolute_url }})
+![Request Body]({{ "/assets/posts/aem_cURL/2_new_request.png" | absolute_url }})
 
 The request body contains the parameter we need to add to the cURL command. It will look something similar to
 ```
