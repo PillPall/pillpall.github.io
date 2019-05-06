@@ -44,7 +44,7 @@ path: `/`
 
 service.ranking: `5002`
 
-idpUrl: `https://author.aem-opencloud.com:5432/saml_login`
+idpUrl: the copied **SSO URL** e.g. `https://accounts.google.com/o/saml2/idp?idpid=C03abcde1f`
 
 idpCertAlias: Certificate aliase name from the Global Truststore
 
