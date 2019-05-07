@@ -49,6 +49,6 @@ idpUrl: the copied **SSO URL** e.g. `https://accounts.google.com/o/saml2/idp?idp
 idpCertAlias: Certificate aliase name from the Global Truststore
 
 
-Now that Google Gsuite is successfully configured as SAML provider in AEM you can try to login with your google into AEM.
+Now that Google Gsuite is successfully configured as SAML provider in AEM you can try to login with your google Account to AEM.
 
 Cheers
