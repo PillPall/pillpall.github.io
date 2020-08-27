@@ -93,7 +93,7 @@ ca_subj = ca_cert.get_subject()
 ca_subj.C = "US"
 ca_subj.ST = "California"
 ca_subj.L = "San Francisco"
-ca_subj.O = "MyOrganization""
+ca_subj.O = "MyOrganization"
 ca_subj.OU = "MyOrganizationalUnit"
 ca_subj.CN = "My own Root CA"
 ca_cert.add_extensions([
@@ -123,7 +123,7 @@ client_subj = client_cert.get_subject()
 client_subj.C = "US"
 client_subj.ST = "California"
 client_subj.L = "San Francisco"
-client_subj.O = "MyOrganization""
+client_subj.O = "MyOrganization"
 client_subj.OU = "MyOrganizationalUnit"
 client_subj.CN = "example.com"
 client_cert.add_extensions([
